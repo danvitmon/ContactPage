@@ -1,0 +1,21 @@
+/* Sticky Footer */
+html,
+body{
+    height: 100%
+}
+
+body{
+    display: flex; /* d-flex */
+    flex-direction: column; /* flex-column */
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+/* End Sticky Footer */

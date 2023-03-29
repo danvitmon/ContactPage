@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shirnk-to-fit=no">
+    <title>BS Forms</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/site.css"/>
+
+    
+    <!-- Print Hide CSS-->
+    <link rel="stylesheet" href="/css/invoice.css">
+
+    <div class="noprint">
+        <style>
+        div.scroll {
+            overflow: auto;
+            white-space: nowrap;
+        }
+        </style>
+    </div>
+
+</head>
+   
+<body>
+    <header>
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+               <div class="container-fluid">
+                   <a class="navbar-brand" href="/index.html">BS Forms</a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                       aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                               <a class="nav-link" href="/index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="/contact.html">Contact</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="/addressbook.html">Address Book</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link active" aria-current="page" href="/invoice.html">Invoice</a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+    </header>
+
+    <!-- Print button -->
+    <div class="col-12 text-end p-2">
+        <input type="button" value="Print this page" onClick="window.print()" class="btn btn-dark noprint" ></input>
+    </div>
+
+    <div class="scroll">
+    <main class="container-fluid">
+
+        <!-- Image and Customer ID -->
+        <div class="border">
+            <form class="row" action="#">
+                <div class="col-12 col-md-8">
+                    <img src="/img/IdeaFoundryLogo.svg" alt="Contact Image"
+                        class="img-fluid" />
+                </div>
+
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="col text-end"><strong>Customer:</strong> 4908</div>
+                </div>
+
+            </form>
+            
+
+        </div>
+        
+        <!-- Date and Invoice No-->
+        <div class="border">
+            <div class="row p-1">
+                <div class="col-12 col-md-6">
+                    <div class="col text-start"><strong>Date:</strong> 05/12/2019</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="col text-start text-md-end"><strong>Invoice No:</strong> 19005</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Invoice To and Pay To-->
+        <div class="col-12 border">
+
+            <div class="row p-1">
+
+                <div class="col-6 col-md-6">
+                    <div class="col text-start"><strong>Invoice To:</strong></div>
+                </div>
+
+                <div class="col-6 col-md-6">
+                    <div class="col text-end"><strong>Pay To:</strong></div>
+                </div>
+
+                <div class="col-6 col-md-6"><small>Mark Davis</small></div>
+                <div class="col-6 col-md-6 text-end"><small>Idea Foundry, Inc</small></div>
+                <div class="col-6 col-md-6"><small>3333 Al Davis Way</small></div>
+                <div class="col-6 col-md-6 text-end"><small>2705 N. Enterprise St</small></div>
+                <div class="col-6 col-md-6"><small>Las Vegas, NV 89118</small></div>
+                <div class="col-6 col-md-6 text-end"><small>Kernersville, NC 27284</small></div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="#">
+                <div class="row">
+                    <div class="col-3 bg-dark p-2 border">
+                        <div class="col text-white"><strong>Service</strong></div>
+                    </div>
+    
+                    <div class="col-4 bg-dark p-2 border">
+                        <div class="col text-white"><strong>Description</strong></div>
+                    </div>
+                    <div class="col-2 bg-dark p-2 border">
+                        <div class="col text-white"><strong>Rate</strong></div>
+                    </div>
+    
+                    <div class="col-1 bg-dark p-2 border">
+                        <div class="col text-white"><strong>QTY</strong></div>
+                    </div>
+
+                    <div class="col-2 bg-dark p-2 border">
+                        <div class="col text-white text-end"><strong>Amount</strong></div>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="#">
+                    <div class="row">
+                        <div class="col-3 bg-light p-2 border">
+                            <div class="col text-dark">Design</div>
+                        </div>
+        
+                        <div class="col-4 bg-light p-2 border">
+                            <div class="col text-dark">Website Design</div>
+                        </div>
+                        <div class="col-2 bg-light p-2 border">
+                            <div class="col text-dark">$60.00</div>
+                        </div>
+        
+                        <div class="col-1 bg-light p-2 border">
+                            <div class="col text-dark">10</div>
+                        </div>
+    
+                        <div class="col-2 bg-light p-2 border">
+                            <div class="col text-dark text-end">$600.00</div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                    <div class="#">
+                        <div class="row">
+                            <div class="col-3 p-2 border">
+                                <div class="col text-dark">Development</div>
+                            </div>
+            
+                            <div class="col-4 p-2 border">
+                                <div class="col text-dark">Website Development</div>
+                            </div>
+                            <div class="col-2 p-2 border">
+                                <div class="col text-dark">$150.00</div>
+                            </div>
+            
+                            <div class="col-1 p-2 border">
+                                <div class="col text-dark">10</div>
+                            </div>
+        
+                            <div class="col-2 p-2 border">
+                                <div class="col text-dark text-end">$1500.00</div>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                    <div class="#">
+                        <div class="row">
+                            <div class="col-3 p-2 border bg-light">
+                                <div class="col text-dark">Deployment</div>
+                            </div>
+            
+                            <div class="col-4 p-2 border bg-light">
+                                <div class="col text-dark">Deployment and Hosting</div>
+                            </div>
+                            <div class="col-2 p-2 border bg-light">
+                                <div class="col text-dark">$450.00</div>
+                            </div>
+            
+                            <div class="col-1 p-2 border bg-light">
+                                <div class="col text-dark">1</div>
+                            </div>
+        
+                            <div class="col-2 p-2 border bg-light">
+                                <div class="col text-dark text-end">$450.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                            <div class="#">
+                                <div class="row">
+                                    <div class="col-10 p-2 border">
+                                        <div class="col text-dark">Sub Total</div>
+                                    </div>
+                    
+                                    <div class="col-2 p-2 border">
+                                        <div class="col text-dark text-end">$2550.00</div>
+                                    </div>
+                            </div>
+
+                            <div class="#">
+                                        <div class="row">
+                                            <div class="col-10 p-2 border">
+                                                <div class="col text-dark">Tax</div>
+                                            </div>
+                            
+                                            <div class="col-2 p-2 border">
+                                                <div class="col text-dark text-end">$0</div>
+                                            </div>      
+                                        </div>
+                            </div>
+
+                            <div class="#">
+                                <div class="row">
+                                    <div class="col-10 p-2 border">
+                                        <div class="col text-dark">Total</div>
+                                    </div>
+                    
+                                    <div class="col-2 p-2 border">
+                                        <div class="col text-dark text-end">$2550.00</div>
+                                    </div>      
+                                </div>
+                            </div>
+        </div>
+                            <div class="col-12">
+                                <strong>NOTE:</strong> This is a computer generated receipt and does not require a physical signature.
+                            </div>
+    </main>
+</div>
+    <footer>
+        <div class="bg-dark text-light py-3 container-fluid">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col text-center text-md-start">&copy; 2023 Built by Daniel</div>
+                <div class="col text-center">Bootstrap Forms</div>
+                <div class="col text-center text-md-end">danvitmon@gmail.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+
+</html>
